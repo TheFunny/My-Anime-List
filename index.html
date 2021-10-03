@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+
+    <!-- MDUI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+      integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+      crossorigin="anonymous"
+    />
+    <title>My Anime List</title>
+  </head>
+  <body
+    class="
+      mdui-theme-layout-dark mdui-appbar-with-toolbar mdui-drawer-body-left
+    "
+  >
+    <div class="mdui-container-fluid">
+      <!-- 应用栏 -->
+      <div class="mdui-appbar mdui-appbar-fixed">
+        <!-- 工具栏 -->
+        <div class="mdui-toolbar mdui-color-theme">
+          <a
+            href="javascript:;"
+            class="mdui-btn mdui-btn-icon mdui-ripple"
+            mdui-drawer="{target: '#drawer', swipe: true}"
+            ><i class="mdui-icon material-icons">menu</i></a
+          >
+          <a href="javascript:;" class="mdui-typo-headline">YoursFunny</a>
+          <a href="/anime/" class="mdui-typo-title">My Anime List</a>
+          <div class="mdui-toolbar-spacer"></div>
+        </div>
+        <!-- Tab栏 -->
+        <!-- add .mdui-appbar-with-tab in body -->
+        <!-- <div class="mdui-tab mdui-color-theme" mdui-tab>
+          <a href="#tab1" class="mdui-ripple">1月</a>
+          <a href="#tab2" class="mdui-ripple">4月</a>
+          <a href="#tab3" class="mdui-ripple">7月</a>
+          <a href="#tab4" class="mdui-ripple">10月</a>
+        </div> -->
+      </div>
+      <!-- 抽屉导航栏 -->
+      <div class="mdui-drawer" id="drawer">
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+          <!-- 首页 -->
+          <li>
+            <a class="mdui-list-item mdui-ripple mdui-list-item-active mdui-list-item-active" href="/anime/"
+              ><i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              <div class="mdui-list-item-content">首页</div></a
+            >
+          </li>
+          <!-- 分割线 -->
+          <li class="mdui-divider"></li>
+          <!-- AGE -->
+          <li>
+            <a
+              class="mdui-list-item mdui-ripple"
+              href="https://www.agefans.cc/"
+              target="_blank"
+              rel="noopener noreferrer external nofollow first"
+              ><i class="mdui-list-item-icon"></i>
+              <div class="mdui-list-item-content">AGE</div></a
+            >
+          </li>
+          <!-- Bangumi -->
+          <li>
+            <a
+              class="mdui-list-item mdui-ripple"
+              href="https://bgm.tv/"
+              target="_blank"
+              rel="noopener noreferrer external nofollow first"
+              ><i class="mdui-list-item-icon"></i>
+              <div class="mdui-list-item-content">Bangumi</div></a
+            >
+          </li>
+          <!-- Bilibili -->
+          <li>
+            <a
+              class="mdui-list-item mdui-ripple"
+              href="https://www.bilibili.com/watchlater/#/list"
+              target="_blank"
+              rel="noopener noreferrer external nofollow"
+              ><i class="mdui-list-item-icon"></i>
+              <div class="mdui-list-item-content">Bilibili 稍后再看</div></a
+            >
+          </li>
+          <!-- 分割线 -->
+          <li class="mdui-divider"></li>
+          <!-- 2021块 -->
+          <li class="mdui-collapse-item mdui-collapse-item-open">
+            <!-- 2021标题 -->
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+              <i class="mdui-list-item-icon"></i>
+              <div class="mdui-list-item-content">2021</div>
+              <i class="mdui-collapse-item-arrow mdui-icon material-icons"
+                >keyboard_arrow_down</i
+              >
+            </div>
+            <!-- 2021内容 -->
+            <ul class="mdui-collapse-item-body mdui-list">
+              <!-- 7月 -->
+              <li>
+                <a
+                  class="mdui-list-item mdui-ripple"
+                  href="archive/2021/july.html"
+                >
+                  <div class="mdui-list-item-content">7月</div>
+                </a>
+              </li>
+              <!-- 10月 -->
+              <li>
+                <a
+                  class="mdui-list-item mdui-ripple"
+                  href="archive/2021/october.html"
+                >
+                  <div class="mdui-list-item-content">10月</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      
+    </div>
+
+    <!-- MDUI JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+      integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

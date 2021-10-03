@@ -1,0 +1,51 @@
+@charset "UTF-8";
+
+// * {
+//     user-select: none;
+// }
+
+// body {
+//     background-color: #22272e;
+//     color: #adbac7;
+// }
+
+// a {
+//     text-decoration: none;
+
+//     &:link,
+//     &:visited {
+//         color: #8ab4f8;
+//     }
+// }
+
+// span {
+//     margin-right: 1em;
+// }
+
+li {
+    // span {
+    //     margin-right: 0.5em;
+    // }
+
+    &.finished {
+        color: #888;
+        a {
+            &:link,
+            &:visited {
+                color: #888;
+            }
+        }
+
+        span {
+            display: none;
+        }
+
+        // &::before {
+        //     content: "<已完结> ";
+        // }
+    }
+}
+
+// sass --watch css/style.scss:css/style.css --style expanded
+// sass css/style.scss:css/style.css --style expanded
+// sass css/style.scss:css/style.min.css --style compressed --no-source-map

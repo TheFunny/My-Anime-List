@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, shrink-to-fit=no"
+    />
+    <meta name="renderer" content="webkit" />
+    <meta name="force-rendering" content="webkit" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" href="/anime/css/style.min.css" />
+
+    <!-- MDUI CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
+      integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+      crossorigin="anonymous"
+    />
+    <title>My Anime List</title>
+  </head>
+  <body
+    class="
+      mdui-theme-layout-dark mdui-appbar-with-toolbar mdui-drawer-body-left
+    "
+  >
+    <div class="mdui-container-fluid">
+      <!-- 应用栏 -->
+      <div class="mdui-appbar mdui-appbar-fixed">
+        <!-- 工具栏 -->
+        <div class="mdui-toolbar mdui-color-theme">
+          <a
+            href="javascript:;"
+            class="mdui-btn mdui-btn-icon mdui-ripple"
+            mdui-drawer="{target: '#drawer', swipe: true}"
+            ><i class="mdui-icon material-icons">menu</i></a
+          >
+          <a href="javascript:;" class="mdui-typo-headline">YoursFunny</a>
+          <a href="/anime/" class="mdui-typo-title">My Anime List</a>
+          <div class="mdui-toolbar-spacer"></div>
+        </div>
+        <!-- Tab栏 -->
+        <!-- add .mdui-appbar-with-tab in body -->
+        <!-- <div class="mdui-tab mdui-color-theme" mdui-tab>
+          <a href="#tab1" class="mdui-ripple">1月</a>
+          <a href="#tab2" class="mdui-ripple">4月</a>
+          <a href="#tab3" class="mdui-ripple">7月</a>
+          <a href="#tab4" class="mdui-ripple">10月</a>
+        </div> -->
+      </div>
+      <!-- 抽屉导航栏 -->
+      <div class="mdui-drawer" id="drawer">
+        <ul class="mdui-list" mdui-collapse="{accordion: true}">
+          <!-- 首页 -->
+          <li>
+            <a class="mdui-list-item mdui-ripple" href="/anime/"
+              ><i class="mdui-list-item-icon mdui-icon material-icons">home</i>
+              <div class="mdui-list-item-content">首页</div></a
+            >
+          </li>
+          <!-- 分割线 -->
+          <li class="mdui-divider"></li>
+          <!-- AGE -->
+          <li>
+            <a
+              class="mdui-list-item mdui-ripple"
+              href="https://www.agefans.cc/"
+              target="_blank"
+              rel="noopener noreferrer external nofollow first"
+              ><i class="mdui-list-item-icon"></i>
+              <div class="mdui-list-item-content">AGE</div></a
+            >
+          </li>
+          <!-- Bangumi -->
+          <li>
+            <a
+              class="mdui-list-item mdui-ripple"
+              href="https://bgm.tv/"
+              target="_blank"
+              rel="noopener noreferrer external nofollow first"
+              ><i class="mdui-list-item-icon"></i>
+              <div class="mdui-list-item-content">Bangumi</div></a
+            >
+          </li>
+          <!-- Bilibili -->
+          <li>
+            <a
+              class="mdui-list-item mdui-ripple"
+              href="https://www.bilibili.com/watchlater/#/list"
+              target="_blank"
+              rel="noopener noreferrer external nofollow"
+              ><i class="mdui-list-item-icon"></i>
+              <div class="mdui-list-item-content">Bilibili 稍后再看</div></a
+            >
+          </li>
+          <!-- 分割线 -->
+          <li class="mdui-divider"></li>
+          <!-- 2021块 -->
+          <li class="mdui-collapse-item mdui-collapse-item-open">
+            <!-- 2021标题 -->
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+              <i class="mdui-list-item-icon"></i>
+              <div class="mdui-list-item-content">2021</div>
+              <i class="mdui-collapse-item-arrow mdui-icon material-icons"
+                >keyboard_arrow_down</i
+              >
+            </div>
+            <!-- 2021内容 -->
+            <ul class="mdui-collapse-item-body mdui-list">
+              <!-- 7月 -->
+              <li>
+                <a class="mdui-list-item mdui-ripple" href="july.html">
+                  <div class="mdui-list-item-content">7月</div>
+                </a>
+              </li>
+              <!-- 10月 -->
+              <li>
+                <a
+                  class="mdui-list-item mdui-ripple mdui-list-item-active"
+                  href="october.html"
+                >
+                  <div class="mdui-list-item-content">10月</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="
+          mdui-row-xs-1
+          mdui-row-sm-1
+          mdui-row-md-2
+          mdui-row-lg-3
+          mdui-row-xl-4
+          mdui-grid-list
+        "
+      >
+        <!-- 卡片 -->
+        <!-- 模板 -->
+        <!-- day处填写周几 -->
+        <!-- ul里面填写内容 -->
+        <!--
+          <div class="mdui-col">
+            <div class="mdui-card mdui-hoverable mdui-grid-tile">
+              <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">day</div>
+              </div>
+              <div class="mdui-card-content">
+                <ul class="mdui-list">
+                </ul>
+              </div>
+            </div>
+          </div>
+        -->
+        <!-- Monday卡片 -->
+        <div class="mdui-col">
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <!-- 卡片标题 -->
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Monday</div>
+            </div>
+            <!-- 卡片内容 -->
+            <div class="mdui-card-content">
+              <!-- 列表 -->
+              <ul class="mdui-list">
+                <!-- 模板 -->
+                <!-- content中填写时间 -->
+                <!-- 完结的在li中添加.finished 在input中添加checked -->
+                <!-- 
+                  <li>
+                    <a
+                      class="mdui-list-item mdui-ripple"
+                      href=""
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <label class="mdui-checkbox">
+                        <input type="checkbox" disabled />
+                        <i class="mdui-checkbox-icon"></i>
+                      </label>
+                      <div
+                        class="mdui-list-item-content mdui-text-truncate"
+                        mdui-tooltip="{content: 'time', position: 'left'}"
+                      >
+                        
+                      </div></a
+                    >
+                  </li>
+                -->
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210161"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      吸血鬼马上死
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Tuesday卡片 -->
+        <div class="mdui-col">
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Tuesday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list">
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    ></div
+                  ></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mdui-col">
+          <!-- Wednesday卡片 -->
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Wednesday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list">
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210214"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      世界顶尖的暗杀者转生为异世界贵族
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210135"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      因为不是命中注定的同伴而被赶出了勇者的队伍、从此以后过上了悠闲的隐居生活
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210199"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      古见同学有交流障碍症
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mdui-col">
+          <!-- Thursday卡片 -->
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Thursday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list">
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210169"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      国王排名
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210065"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      迷宫标记者
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210258"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      铂金终局
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mdui-col">
+          <!-- Friday卡片 -->
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Friday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list">
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210316"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      蓝色时期
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210162"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      大正处女御伽话
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210070"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      终末的后宫
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mdui-col">
+          <!-- Saturday卡片 -->
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Saturday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list">
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210307"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '01:30', position: 'left'}"
+                    >
+                      当雏菊邂逅少女
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210089"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      关于前辈很烦人的事
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="mdui-col">
+          <!-- Sunday卡片 -->
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Sunday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list">
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      鬼灭之刃 无限列车篇
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/2021014"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '', position: 'left'}"
+                    >
+                      月与莱卡与吸血公主
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210249"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '00:30 ', position: 'left'}"
+                    >
+                      86 -不存在的战区- 第二季
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href="https://www.agefans.cc/detail/20210148"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '22:00', position: 'left'}"
+                    >
+                      看得见的女孩
+                    </div></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- MDUI JavaScript -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
+      integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
