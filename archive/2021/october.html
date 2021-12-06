@@ -9,20 +9,22 @@
     <meta name="renderer" content="webkit" />
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <link rel="stylesheet" href="/anime/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="/anime/css/style.min.css" />
+    <link rel="stylesheet" type="text/css" href="/anime/css/fonts.css" />
 
     <!-- MDUI CSS -->
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css"
-      integrity="sha384-cLRrMq39HOZdvE0j6yBojO4+1PrHfB7a9l5qLcmRm/fiWXYY+CndJPmyu5FV/9Tw"
+      href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"
+      integrity="sha512-Hh2syGXSuZabqBNcdvPiGo67ASyKhlKTZV9lLOmJp10qZ1v8/YPeuZBoOh0WmS/UPwWtRzQhNJfYyKDAhdGocQ=="
       crossorigin="anonymous"
     />
     <title>My Anime List</title>
   </head>
   <body
     class="
-      mdui-theme-layout-dark mdui-appbar-with-toolbar mdui-drawer-body-left
+      mdui-theme-layout-dark mdui-appbar-with-toolbar mdui-drawer-body-left 
+      font-hei
     "
   >
     <div class="mdui-container-fluid">
@@ -121,7 +123,10 @@
             <ul class="mdui-collapse-item-body mdui-list">
               <!-- 7月 -->
               <li>
-                <a class="mdui-list-item mdui-ripple" href="july.html">
+                <a
+                  class="mdui-list-item mdui-ripple"
+                  href="/anime/archive/2021/july.html"
+                >
                   <div class="mdui-list-item-content">7月</div>
                 </a>
               </li>
@@ -129,9 +134,32 @@
               <li>
                 <a
                   class="mdui-list-item mdui-ripple mdui-list-item-active"
-                  href="october.html"
+                  href="/anime/archive/2021/october.html"
                 >
                   <div class="mdui-list-item-content">10月</div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <!-- 2022块 -->
+          <li class="mdui-collapse-item">
+            <!-- 2021标题 -->
+            <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
+              <i class="mdui-list-item-icon"></i>
+              <div class="mdui-list-item-content">2022</div>
+              <i class="mdui-collapse-item-arrow mdui-icon material-icons"
+                >keyboard_arrow_down</i
+              >
+            </div>
+            <!-- 2022内容 -->
+            <ul class="mdui-collapse-item-body mdui-list">
+              <!-- 1月 -->
+              <li>
+                <a
+                  class="mdui-list-item mdui-ripple"
+                  href="/anime/archive/2022/january.html"
+                >
+                  <div class="mdui-list-item-content">1月</div>
                 </a>
               </li>
             </ul>
@@ -621,8 +649,8 @@
 
     <!-- MDUI JavaScript -->
     <script
-      src="https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/js/mdui.min.js"
-      integrity="sha384-gCMZcshYKOGRX9r6wbDrvF+TcCCswSHFucUzUPwka+Gr+uHgjlYvkABr95TCOz3A"
+      src="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/js/mdui.min.js"
+      integrity="sha512-LBh0vC8hNru7991yk7vBb3tiBCU41shGOowGRnLqz63KYedvNQOyGOKHnl/pHSRYJ2P45bjzALArvDDHSSc2KA=="
       crossorigin="anonymous"
     ></script>
   </body>

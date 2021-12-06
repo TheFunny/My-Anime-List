@@ -9,6 +9,7 @@
     <meta name="renderer" content="webkit" />
     <meta name="force-rendering" content="webkit" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <link rel="stylesheet" type="text/css" href="/anime/css/style.min.css" />
     <link rel="stylesheet" type="text/css" href="/anime/css/fonts.css" />
 
     <!-- MDUI CSS -->
@@ -55,9 +56,7 @@
         <ul class="mdui-list" mdui-collapse="{accordion: true}">
           <!-- 首页 -->
           <li>
-            <a
-              class="mdui-list-item mdui-ripple mdui-list-item-active"
-              href="/anime/"
+            <a class="mdui-list-item mdui-ripple" href="/anime/"
               ><i class="mdui-list-item-icon mdui-icon material-icons">home</i>
               <div class="mdui-list-item-content">首页</div></a
             >
@@ -126,7 +125,7 @@
               <li>
                 <a
                   class="mdui-list-item mdui-ripple"
-                  href="archive/2021/july.html"
+                  href="/anime/archive/2021/july.html"
                 >
                   <div class="mdui-list-item-content">7月</div>
                 </a>
@@ -135,7 +134,7 @@
               <li>
                 <a
                   class="mdui-list-item mdui-ripple"
-                  href="archive/2021/october.html"
+                  href="/anime/archive/2021/october.html"
                 >
                   <div class="mdui-list-item-content">10月</div>
                 </a>
@@ -143,8 +142,8 @@
             </ul>
           </li>
           <!-- 2022块 -->
-          <li class="mdui-collapse-item">
-            <!-- 2022标题 -->
+          <li class="mdui-collapse-item mdui-collapse-item-open">
+            <!-- 2021标题 -->
             <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
               <i class="mdui-list-item-icon"></i>
               <div class="mdui-list-item-content">2022</div>
@@ -157,8 +156,8 @@
               <!-- 1月 -->
               <li>
                 <a
-                  class="mdui-list-item mdui-ripple"
-                  href="archive/2022/january.html"
+                  class="mdui-list-item mdui-ripple mdui-list-item-active"
+                  href="/anime/archive/2022/january.html"
                 >
                   <div class="mdui-list-item-content">1月</div>
                 </a>
@@ -166,6 +165,118 @@
             </ul>
           </li>
         </ul>
+      </div>
+      <div
+        class="
+          mdui-row-xs-1
+          mdui-row-sm-1
+          mdui-row-md-2
+          mdui-row-lg-3
+          mdui-row-xl-4
+          mdui-grid-list
+        "
+      >
+        <!-- 卡片 -->
+        <!-- 模板 -->
+        <!-- day处填写周几 -->
+        <!-- ul里面填写内容 -->
+        <!--
+          <div class="mdui-col">
+            <div class="mdui-card mdui-hoverable mdui-grid-tile">
+              <div class="mdui-card-primary">
+                <div class="mdui-card-primary-title">day</div>
+              </div>
+              <div class="mdui-card-content">
+                <ul class="mdui-list">
+                </ul>
+              </div>
+            </div>
+          </div>
+        -->
+
+        <!-- Tuesday卡片 -->
+        <div class="mdui-col">
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <!-- 卡片标题 -->
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Tuesday</div>
+            </div>
+            <!-- 卡片内容 -->
+            <div class="mdui-card-content">
+              <!-- 列表 -->
+              <ul class="mdui-list">
+                <!-- 模板 -->
+                <!-- content中填写时间 -->
+                <!-- 完结的在li中添加.finished 在input中添加checked -->
+                <!-- 
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: 'time', position: 'left'}"
+                    >
+                      
+                    </div></a
+                  >
+                </li>
+                -->
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Thursday卡片 -->
+        <div class="mdui-col">
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Thursday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list"></ul>
+            </div>
+          </div>
+        </div>
+        <!-- Friday卡片 -->
+        <div class="mdui-col">
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Friday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list"></ul>
+            </div>
+          </div>
+        </div>
+        <!-- Saturday卡片 -->
+        <div class="mdui-col">
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Saturday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list"></ul>
+            </div>
+          </div>
+        </div>
+        <!-- Sunday卡片 -->
+        <div class="mdui-col">
+          <div class="mdui-card mdui-hoverable mdui-grid-tile">
+            <div class="mdui-card-primary">
+              <div class="mdui-card-primary-title">Sunday</div>
+            </div>
+            <div class="mdui-card-content">
+              <ul class="mdui-list"></ul>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
