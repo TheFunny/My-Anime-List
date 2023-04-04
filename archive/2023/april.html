@@ -139,7 +139,7 @@
             </ul>
           </li>
           <!-- 2022块 -->
-          <li class="mdui-collapse-item mdui-collapse-item-open">
+          <li class="mdui-collapse-item">
             <!-- 2022标题 -->
             <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
               <i class="mdui-list-item-icon"></i>
@@ -153,8 +153,8 @@
               <!-- 1月 -->
               <li>
                 <a
-                  class="mdui-list-item mdui-ripple mdui-list-item-active"
-                  href="january.html"
+                  class="mdui-list-item mdui-ripple"
+                  href="../2022/january.html"
                 >
                   <div class="mdui-list-item-content">1月</div>
                 </a>
@@ -163,7 +163,7 @@
               <li>
                 <a
                   class="mdui-list-item mdui-ripple"
-                  href="april.html"
+                  href="../2022/april.html"
                 >
                   <div class="mdui-list-item-content">4月</div>
                 </a>
@@ -172,7 +172,7 @@
               <li>
                 <a
                   class="mdui-list-item mdui-ripple"
-                  href="july.html"
+                  href="../2022/july.html"
                 >
                   <div class="mdui-list-item-content">7月</div>
                 </a>
@@ -181,7 +181,7 @@
               <li>
                 <a
                   class="mdui-list-item mdui-ripple"
-                  href="october.html"
+                  href="../2022/october.html"
                 >
                   <div class="mdui-list-item-content">10月</div>
                 </a>
@@ -189,7 +189,7 @@
             </ul>
           </li>
           <!-- 2023块 -->
-          <li class="mdui-collapse-item">
+          <li class="mdui-collapse-item mdui-collapse-item-open">
             <!-- 2023标题 -->
             <div class="mdui-collapse-item-header mdui-list-item mdui-ripple">
               <i class="mdui-list-item-icon"></i>
@@ -204,7 +204,7 @@
               <li>
                 <a
                   class="mdui-list-item mdui-ripple"
-                  href="../2023/january.html"
+                  href="january.html"
                 >
                   <div class="mdui-list-item-content">1月</div>
                 </a>
@@ -212,8 +212,8 @@
               <!-- 4月 -->
               <li>
                 <a
-                  class="mdui-list-item mdui-ripple"
-                  href="../2023/april.html"
+                  class="mdui-list-item mdui-ripple mdui-list-item-active"
+                  href="april.html"
                 >
                   <div class="mdui-list-item-content">4月</div>
                 </a>
@@ -290,16 +290,36 @@
         -->
 
         <!-- Monday 卡片 -->
-        <!-- <div class="mdui-col">
+        <div class="mdui-col">
           <div class="mdui-card mdui-hoverable mdui-grid-tile">
             <div class="mdui-card-primary">
               <div class="mdui-card-primary-title">Monday</div>
             </div>
             <div class="mdui-card-content">
-              <ul class="mdui-list"></ul>
+              <ul class="mdui-list">
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '23:00', position: 'left'}"
+                    >
+                      放学后失眠的你
+                    </div></a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-        </div> -->
+        </div>
         <!-- Tuesday卡片 -->
         <div class="mdui-col">
           <div class="mdui-card mdui-hoverable mdui-grid-tile">
@@ -314,7 +334,6 @@
                 <!-- 模板 -->
                 <!-- content中填写时间 -->
                 <!-- 完结的在li中添加.finished 在input中添加checked -->
-                <!-- 
                 <li>
                   <a
                     class="mdui-list-item mdui-ripple"
@@ -328,67 +347,9 @@
                     </label>
                     <div
                       class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: 'time', position: 'left'}"
+                      mdui-tooltip="{content: '22:00', position: 'left'}"
                     >
-                      
-                    </div></a
-                  >
-                </li>
-                -->
-                <li class="finished">
-                  <a
-                    class="mdui-list-item mdui-ripple"
-                    href="https://www.agemys.net/detail/20210160"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <label class="mdui-checkbox">
-                      <input type="checkbox" disabled checked />
-                      <i class="mdui-checkbox-icon"></i>
-                    </label>
-                    <div
-                      class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: '22:30', position: 'left'}"
-                    >
-                      天才王子的赤字国家振兴术
-                    </div></a
-                  >
-                </li>
-                <li class="finished">
-                  <a
-                    class="mdui-list-item mdui-ripple"
-                    href="https://www.agemys.net/detail/20220063"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <label class="mdui-checkbox">
-                      <input type="checkbox" disabled checked />
-                      <i class="mdui-checkbox-icon"></i>
-                    </label>
-                    <div
-                      class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: '23:00', position: 'left'}"
-                    >
-                      与变成了异世界美少女的大叔一起冒险
-                    </div></a
-                  >
-                </li>
-                <li class="finished">
-                  <a
-                    class="mdui-list-item mdui-ripple"
-                    href="https://www.agemys.net/detail/20210155"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                  >
-                    <label class="mdui-checkbox">
-                      <input type="checkbox" disabled checked />
-                      <i class="mdui-checkbox-icon"></i>
-                    </label>
-                    <div
-                      class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: '23:30', position: 'left'}"
-                    >
-                      自称贤者弟子的贤者
+                      跃动青春
                     </div></a
                   >
                 </li>
@@ -404,22 +365,22 @@
             </div>
             <div class="mdui-card-content">
               <ul class="mdui-list">
-                <li class="finished">
+                <li>
                   <a
                     class="mdui-list-item mdui-ripple"
-                    href="https://www.agemys.net/detail/20220011"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <label class="mdui-checkbox">
-                      <input type="checkbox" disabled checked />
+                      <input type="checkbox" disabled />
                       <i class="mdui-checkbox-icon"></i>
                     </label>
                     <div
                       class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: '23:30', position: 'left'}"
+                      mdui-tooltip="{content: '22:00', position: 'left'}"
                     >
-                      秘密内幕～女警的逆袭～
+                      【我推的孩子】
                     </div></a
                   >
                 </li>
@@ -428,16 +389,36 @@
           </div>
         </div>
         <!-- Thursday卡片 -->
-        <!-- <div class="mdui-col">
+        <div class="mdui-col">
           <div class="mdui-card mdui-hoverable mdui-grid-tile">
             <div class="mdui-card-primary">
               <div class="mdui-card-primary-title">Thursday</div>
             </div>
             <div class="mdui-card-content">
-              <ul class="mdui-list"></ul>
+              <ul class="mdui-list">
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '23:55', position: 'left'}"
+                    >
+                      国王排名 勇气的宝箱
+                    </div></a
+                  >
+                </li>
+              </ul>
             </div>
           </div>
-        </div> -->
+        </div>
         <!-- Friday卡片 -->
         <div class="mdui-col">
           <div class="mdui-card mdui-hoverable mdui-grid-tile">
@@ -446,22 +427,22 @@
             </div>
             <div class="mdui-card-content">
               <ul class="mdui-list">
-                <li class="finished">
+                <li>
                   <a
                     class="mdui-list-item mdui-ripple"
-                    href="https://www.agemys.net/detail/20220024"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <label class="mdui-checkbox">
-                      <input type="checkbox" disabled checked />
+                      <input type="checkbox" disabled />
                       <i class="mdui-checkbox-icon"></i>
                     </label>
                     <div
                       class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: '22:00', position: 'left'}"
+                      mdui-tooltip="{content: '24:05', position: 'left'}"
                     >
-                      Slow Loop
+                      总之就是非常可爱 第二季
                     </div></a
                   >
                 </li>
@@ -477,41 +458,41 @@
             </div>
             <div class="mdui-card-content">
               <ul class="mdui-list">
-                <li class="finished">
+                <li>
                   <a
                     class="mdui-list-item mdui-ripple"
-                    href="https://www.agemys.net/detail/20220028"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <label class="mdui-checkbox">
-                      <input type="checkbox" disabled checked />
+                      <input type="checkbox" disabled />
                       <i class="mdui-checkbox-icon"></i>
                     </label>
                     <div
                       class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: '01:30', position: 'left'}"
+                      mdui-tooltip="{content: '21:00', position: 'left'}"
                     >
-                      擅长捉弄的高木同学 第三季
+                      天国大魔境
                     </div></a
                   >
                 </li>
-                <li class="finished">
+                <li>
                   <a
                     class="mdui-list-item mdui-ripple"
-                    href="https://www.agemys.net/detail/20210070"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <label class="mdui-checkbox">
-                      <input type="checkbox" disabled checked />
+                      <input type="checkbox" disabled />
                       <i class="mdui-checkbox-icon"></i>
                     </label>
                     <div
                       class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: '99:99', position: 'left'}"
+                      mdui-tooltip="{content: '24:30', position: 'left'}"
                     >
-                      终末的后宫
+                      我心里危险的东西
                     </div></a
                   >
                 </li>
@@ -527,41 +508,60 @@
             </div>
             <div class="mdui-card-content">
               <ul class="mdui-list">
-                <li class="finished">
+                <li>
                   <a
                     class="mdui-list-item mdui-ripple"
-                    href="https://www.agemys.net/detail/20220070"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <label class="mdui-checkbox">
-                      <input type="checkbox" disabled checked />
+                      <input type="checkbox" disabled />
                       <i class="mdui-checkbox-icon"></i>
                     </label>
                     <div
                       class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: '00:30', position: 'left'}"
+                      mdui-tooltip="{content: '16:00', position: 'left'}"
                     >
-                      更衣人偶坠入爱河
+                      机动战士高达 水星的魔女 Season2
                     </div></a
                   >
                 </li>
-                <li class="finished">
+                <li>
                   <a
                     class="mdui-list-item mdui-ripple"
-                    href="https://www.agemys.net/detail/20220053"
+                    href=""
                     target="_blank"
                     rel="noopener noreferrer"
                   >
                     <label class="mdui-checkbox">
-                      <input type="checkbox" disabled checked />
+                      <input type="checkbox" disabled />
                       <i class="mdui-checkbox-icon"></i>
                     </label>
                     <div
                       class="mdui-list-item-content mdui-text-truncate"
-                      mdui-tooltip="{content: '01:00', position: 'left'}"
+                      mdui-tooltip="{content: '21:00', position: 'left'}"
                     >
-                      明日酱的水手服
+                      什么情况都不知道的转校生一个劲的凑过来。
+                    </div></a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="mdui-list-item mdui-ripple"
+                    href=""
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <label class="mdui-checkbox">
+                      <input type="checkbox" disabled />
+                      <i class="mdui-checkbox-icon"></i>
+                    </label>
+                    <div
+                      class="mdui-list-item-content mdui-text-truncate"
+                      mdui-tooltip="{content: '22:15', position: 'left'}"
+                    >
+                      鬼灭之刃 锻刀村篇
                     </div></a
                   >
                 </li>
